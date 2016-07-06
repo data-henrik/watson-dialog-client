@@ -69,7 +69,7 @@ if __name__ == '__main__':
     parms = getParameters()
     print parms
     if (parms.registerDialog and parms.dialogFile):
-       registerDialog(parms.dialogFile,parms.registerDialog)
+       registerDialog(parms.dialogFile,parms.dialogName)
     if (parms.listDialog):
        listDialog()
     if (parms.updateDialog and parms.dialogID and parms.dialogFile):
