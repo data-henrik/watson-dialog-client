@@ -13,7 +13,8 @@ https://github.com/watson-developer-cloud/python-sdk/blob/master/examples/dialog
 ## Some usage examples
 
 ### Invoke Help
-``python henriksDialog.py -h
+```
+python henriksDialog.py -h
 usage: henriksDialog [-h] [--register] [--list] [--update] [--delete]
                      [-f FILE] [-id DIALOGID] [-dn DIALOGNAME]
 
@@ -30,10 +31,10 @@ optional arguments:
                         dialog ID
   -dn DIALOGNAME, --dialogname DIALOGNAME
                         dialog name
-``
+```
 
 ### List available dialogs
-``
+```
 python henriksDialog.py --list
 Namespace(deleteDialog=False, dialogFile=None, dialogID=None, dialogName=None, listDialog=True, registerDialog=False, updateDialog=False)
 {
@@ -90,4 +91,13 @@ Namespace(deleteDialog=False, dialogFile=None, dialogID=None, dialogName=None, l
     }
   ]
 }
-``
+```
+### Create/register a new dialog
+```
+python henriksDialog.py --register -f henrikDialog1.xml -dn myDialog
+Namespace(deleteDialog=False, dialogFile='henrikDialog1.xml', dialogID=None, dialogName='myDialog', listDialog=False, registerDialog=True, updateDialog=False)
+{
+  "dialog_id": "fb528f9f-xxxx-yyyy-zzz-abcdef1c52879"
+}
+```
+
