@@ -10,6 +10,11 @@ https://github.com/watson-developer-cloud/python-sdk/blob/master/examples/dialog
 
 (More to come, first the code... ;)
 
+In order to get started, you will need to have the watson-developer-cloud module installed:
+```
+pip install watson-developer-cloud
+```
+
 ## Some usage examples
 
 ### Invoke Help
