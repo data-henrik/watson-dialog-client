@@ -1,0 +1,7 @@
+{
+    "credentials": {
+        "url": "https://gateway.watsonplatform.net/dialog/api",
+        "password": "yourServicePassword",
+        "username": "yourServiceID"
+    }
+}
