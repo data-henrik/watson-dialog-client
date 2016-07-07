@@ -106,3 +106,66 @@ Namespace(deleteDialog=False, dialogFile='henrikDialog1.xml', dialogID=None, dia
 }
 ```
 
+### Converse, chat with Watson
+I registered a dialog (the pizza example) and now started the chat by providing the dialog ID.
+```
+python henriksDialog.py -c -id fb528f9f-xxxx-yyyy-zzz-abcdef1c52879
+Namespace(deleteDialog=False, dialogFile=None, dialogID='fb528f9f-xxxx-yyyy-zzz-abcdef1c52879', dialogName=None, listDialog=False, registerDialog=False, startDialog=True, updateDialog=False)
+Starting a dialog, stop by Ctrl+C
+=================================
+
+[u"Hi, I'm Watson! I can help you order a pizza, what size would you like?"]
+
+Please enter:
+What sizes do you have
+[u'We have small, medium, large and extra large, as well as all the normal toppings.', u'', u'What size would you like?']
+
+Please enter:
+I take a large pizza
+[u'', u'What toppings are you in the mood for? (Limit 4)']
+
+Please enter:
+what toppings do you have
+[u'We have cheese, pepperoni, olives, mushrooms, etc.', u'', u'What toppings are you in the mood for? (Limit 4)']
+
+Please enter:
+ok, I take a extra large pizza with salami, tuna and cheese
+[u'', u'Do you prefer pickup or delivery?']
+
+Please enter:
+for here
+[u'I didnt grasp what you said.', u'', u'Do you prefer pickup or delivery?']
+
+Please enter:
+I will pick it up
+[u'Ok, I have one Large Cheese pizza for pickup. Is that correct?']
+
+Please enter:
+no
+[u"Oops! Let's start over. What size would you like?"]
+
+Please enter:
+extra large
+[u'', u'What toppings are you in the mood for? (Limit 4)']
+
+Please enter:
+cheese and mushrooms
+[u'', u'Do you prefer pickup or delivery?']
+
+Please enter:
+delivery
+[u'Ok, I have one extra large Cheese & Mushrooms pizza for delivery. Is that correct?']
+
+Please enter:
+yes
+[u'Sounds good! Your pizza will be ready in 20 minutes. Do you want to order another?']
+
+Please enter:
+no, but how are you
+[u'Okay, thank you for your order! Just let me know if you want to place another order.']
+
+Please enter:
+how are you
+[u"I'm great thanks.", u'', u'What size would you like?']
+```
+
