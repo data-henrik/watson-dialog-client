@@ -1,9 +1,11 @@
 # henriksDialog
 
-### Manage dialogs for IBM Watson Dialog Service on Bluemix
+### Manage and test dialogs for IBM Watson Dialog Service on Bluemix
 
 This is a simple Python script I developed to manage my dialogs when testing the IBM Watson Dialog Service on Bluemix.
 The script takes some command line arguments and then calls the related service API. The entire result is always dumped.
+
+Another feature of the script is to test a dialog by using the `--converse` option. The Watson statement is displayed and it is possible to enter a reply that is sent back to the Watson Dialog Service.
 
 Some of the source is taken from this SDK example:
 https://github.com/watson-developer-cloud/python-sdk/blob/master/examples/dialog_v1.py
@@ -20,8 +22,8 @@ pip install watson-developer-cloud
 ### Invoke Help
 ```
 python henriksDialog.py -h
-usage: henriksDialog [-h] [--register] [--list] [--update] [--delete]
-                     [-f FILE] [-id DIALOGID] [-dn DIALOGNAME]
+usage: henriksDialog [-h] [--register] [--list] [--converse] [--update]
+                     [--delete] [-f FILE] [-id DIALOGID] [-dn DIALOGNAME]
 
 Process my Watson Dialog Commands
 
@@ -29,6 +31,7 @@ optional arguments:
   -h, --help            show this help message and exit
   --register, -r        --register -dn diaglogName -f dialogFile
   --list, -l            --list
+  --converse, -c        --converse -id dialogID
   --update, -u          --update -id dialogID -f dialogFile
   --delete, -d          --delete -id dialogID
   -f FILE, --file FILE  read dialog file from here
