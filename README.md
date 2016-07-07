@@ -1,4 +1,4 @@
-# henriksDialog
+# watson-dialog-client
 
 ### Manage and test dialogs for IBM Watson Dialog Service on Bluemix
 
