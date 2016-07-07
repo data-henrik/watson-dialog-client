@@ -110,7 +110,7 @@ Namespace(deleteDialog=False, dialogFile='henrikDialog1.xml', dialogID=None, dia
 ```
 
 ### Converse, chat with Watson
-I registered a dialog (the pizza example) and now started the chat by providing the dialog ID.
+I registered a dialog (the [pizza example](https://github.com/watson-developer-cloud/dialog-tool/blob/master/dialogs/pizza_sample.xml)) and now started the chat by providing the dialog ID.
 ```
 python henriksDialog.py -c -id fb528f9f-xxxx-yyyy-zzz-abcdef1c52879
 Namespace(deleteDialog=False, dialogFile=None, dialogID='fb528f9f-xxxx-yyyy-zzz-abcdef1c52879', dialogName=None, listDialog=False, registerDialog=False, startDialog=True, updateDialog=False)
