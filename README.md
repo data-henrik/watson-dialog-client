@@ -1,7 +1,7 @@
 # watson-dialog-client
+See my blog at http://blog.4loeser.net/2016/07/bluemix-where-python-and-watson-are-in.html for an introduction.
 
 ### Manage and test dialogs for IBM Watson Dialog Service on Bluemix
-
 This is a simple Python script I developed to manage my dialogs when testing the IBM Watson Dialog Service on Bluemix.
 The script takes some command line arguments and then calls the related service API. The entire result is always dumped.
 
